@@ -28,7 +28,11 @@ def bake_time_remaining(elapsed_bake_time):
 
 print(bake_time_remaining.__doc__)
 
+
+#TODO: Define the 'preparation_time_in_minutes()' function below.
 PREPARATION_TIME = 2
+
+# You might also consider using 'PREPARATION_TIME' here, if you have it defined.
 def preparation_time_in_minutes(number_of_layers):
     """Calculate the bake time remaining.
 
@@ -37,13 +41,13 @@ def preparation_time_in_minutes(number_of_layers):
 
     Function that takes the number of layers in the lasagna as
     an argument and returns how many minutes you would spend making them.
-    based on the `PREPARATION_TIME = 2`.
+    based on the `PREPARATION_TIME`.
     """
     return PREPARATION_TIME * number_of_layers 
 print(preparation_time_in_minutes.__doc__)
-#TODO: Define the 'preparation_time_in_minutes()' function below.
-# You might also consider using 'PREPARATION_TIME' here, if you have it defined.
 
+#TODO: define the 'elapsed_time_in_minutes()' function below.
+# Remember to add a docstring (you can copy and then alter the one from bake_time_remaining.)
 def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     """Calculate the elapsed cooking time.
 
@@ -57,7 +61,4 @@ def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     """
     return (PREPARATION_TIME * number_of_layers) + (elapsed_bake_time)
 print(elapsed_time_in_minutes.__doc__)
-
-#TODO: define the 'elapsed_time_in_minutes()' function below.
-# Remember to add a docstring (you can copy and then alter the one from bake_time_remaining.)
     
